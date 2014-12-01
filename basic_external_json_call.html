@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>JSON called by AJAX example</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+<h1>Test External JSON Call</h1>
+	<script type="text/javascript">
+		$.getJSON('json/external.json', function(data){
+		console.log(data.address.city)
+	})
+	</script>
+
+</body>
+
+
+</html>
